@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* =========================
+   🌟 Base (Móvil First)
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menú móvil */
+.menu{
+    padding: 20px;
+}
+
+#menu{
+    display: none;
+}
+
+.menu label{
+    cursor: pointer;
+    display: initial;
+}
+
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FF9000;
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 100%;
+}
+
+.menu .navbar ul li a:hover{
+    color: white;
+}
+
+.logo{
+    display: none;
+}
+
+/* Carrito móvil */
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    width: 100%;
+    display: block;
+}
+
+.bg, .bg-2{
+    display: none;
+}
+
+/* Header móvil */
+.header{
+    display: block;
+    padding-top: 80px;
+}
+
+.header-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-text{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.header-text h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.header-img{
+    width: 100%;
+    text-align: center;
+}
+
+.header-img img{
+    width: 300px;
+}
+
+/* Breakfast móvil */
+.breakfast{
+    padding: 30px;
+}
+
+.breakfast-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CTA móvil */
+.info{
+    padding: 30px;
+}
+
+.info-content{
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-img,
+.info-txt{
+    width: 100%;
+}
+
+.info-img img{
+    width: 250px;
+    margin-left: 0;
+}
+
+/* Products móvil */
+.products{
+    padding: 30px;
+    text-align: center;
+}
+
+.box-container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr; /* ✅ 1 producto por fila en móvil */
+    gap: 20px;
+}
+
+.box{
+    border-top: 2px solid #FF9000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: block; /* ✅ Siempre visible */
+}
+
+.box img{
+    width: 120px;
+}
+
+/* App móvil */
+.app{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app-img img{
+    width: 250px;
+}
+
+/* Footer móvil */
+.footer{
+    padding: 30px;
+    background-color: #FF9000;
+}
+
+.footer-content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ==============================
+   🖥 Escritorio (Diseño original)
+   ============================== */
+
+@media(min-width: 992px){
+
+    .header{
+        display: flex;
+        align-items: center;
+        min-height: 70vh;
+        position: relative;
+        padding-top: 0;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        z-index: 1000;
+    }
+
+    .menu label{
+        display: none;
+    }
+
+    .logo{
+        display: block;
+        font-size: 25px;
+        color: #FF9000;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .menu .navbar{
+        position: static;
+        background: none;
+        display: flex !important;
+    }
+
+    .menu .navbar ul li{
+        float: left;
+        width: auto;
+    }
+
+    .menu .navbar ul li a{
+        font-size: 18px;
+        color: #1D1D1B;
+        font-weight: 600;
+        padding: 20px;
+        display: block;
+    }
+
+    .submenu:hover #carrito{
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: #77777797;
+        top: 100%;
+        min-width: 400px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .header-content{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .header-text{
+        width: 50%;
+        margin-right: 50px;
+        text-align: left;
+    }
+
+    .header-img{
+        width: 50%;
+        text-align: right;
+    }
+
+    .header-img img{
+        width: 650px;
+    }
+
+    .breakfast-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info-content{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .info-img{
+        width: 50%;
+    }
+
+    .info-txt{
+        width: 50%;
+    }
+
+    .info-img img{
+        width: 450px;
+        margin-left: -10px;
+    }
+
+    .products{
+        padding: 0 0 50px 0;
+    }
+
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .app{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .app-txt, .app-img{
+        width: 50%;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+}

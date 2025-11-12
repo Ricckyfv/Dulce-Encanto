@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style-mobile.css"> -->
+  </head>
+  <body>
+    <header class="header">
+      <img class="bg" src="img/images/bg.png" alt="" />
+
+      <div class="menu">
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="img/images/menu.png" class="menu-icono" alt="" />
+        </label>
+
+        <a href="#" class="logo"
+          ><img
+            src="img/images/DulceEncanto Bakery Logo - Playful Cupcake Icon.png"
+            alt="Dulce Encanto logo"
+        /></a>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#breakfast">Servicios</a></li>
+            <li><a href="#lista">Catalogo</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!--Contiene el carrito-->
+        <div>
+          <ul>
+            <li class="submenu">
+              <img src="img/images/car.svg" id="img-carrito" alt="carrito" />
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-3">Vaciar carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-content container">
+        <div class="header-text">
+          <h1>
+            <span>Bienvenid@s</span> Disfruta los mejores postres de Madrid
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            autem laborum numquam ratione. Magnam facilis ducimus fugiat!
+            Dignissimos aliquam voluptas vero tempore quibusdam laborum
+            deserunt.
+          </p>
+          <div class="btns">
+            <a href="#info" class="btn-1">Personalizar tarta</a>
+            <a href="#lista" class="btn-2">Catálogo</a>
+          </div>
+        </div>
+
+        <div class="header-img">
+          <img
+            src="img/images/necesito_una_img_para_el_header_de_mi_pagina_web_de_resposteria__que_se_parezca_a_la_img_que_te_voy_a_adjuntar__pero_me_gutaria_que_en_la_img_aparezca_una_tarta_de_cumpleaños_realista__3_cupcakes__una.png"
+            alt="plato de pimientos"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="breakfast container" id="breakfast">
+      <h2>Desayunos</h2>
+      <p>Horario 9am - 12am</p>
+
+      <div class="breakfast-content">
+        <div
+          class="breakfast-1"
+          data-img="img/images/b1.png"
+          data-desc="Café con leche, tostada con tomate y zumo natural"
+          data-price="4.50€"
+        >
+          <img src="img/images/b1.png" alt="" />
+          <h3>Combo 1</h3>
+        </div>
+
+        <div
+          class="breakfast-1"
+          data-img="img/images/b2.png"
+          data-desc="Café solo, croissant artesanal y fruta fresca"
+          data-price="4.00€"
+        >
+          <img src="img/images/b2.png" alt="" />
+          <h3>Combo 2</h3>
+        </div>
+
+        <div
+          class="breakfast-1"
+          data-img="img/images/b3.png"
+          data-desc="Capuchino, bizcocho casero y batido natural"
+          data-price="5.25€"
+        >
+          <img src="img/images/b3.png" alt="" />
+          <h3>Combo 3</h3>
+        </div>
+
+        <div
+          class="breakfast-1"
+          data-img="img/images/b4.png"
+          data-desc="Té verde, tostada con aguacate y smoothie detox"
+          data-price="5.75€"
+        >
+          <img src="img/images/b4.png" alt="" />
+          <h3>Combo 4</h3>
+        </div>
+      </div>
+
+      <div id="combo-panel" class="combo-info">
+        <img id="combo-big-img" src="" alt="" />
+        <p id="combo-text"></p>
+        <span id="combo-price"></span>
+      </div>
+
+      <!-- Panel dinámico (nuevo) -->
+      <!-- <div class="combo-info">
+        <img id="combo-big-img" src="" alt="" />
+        <p id="combo-text"></p>
+        <span id="combo-price"></span>
+      </div> -->
+    </section>
+
+    <!-- <section class="breakfast container">
+      <h2>Desayunos</h2>
+      <p>Horario 9am - 12am</p>
+      <div class="breakfast-content">
+        <div class="breakfast-1">
+          <img src="img/images/b1.png" alt="" />
+          <h3>Combo 1</h3>
+        </div>
+        <div class="breakfast-1">
+          <img src="img/images/b2.png" alt="" />
+          <h3>Combo 2</h3>
+        </div>
+        <div class="breakfast-1">
+          <img src="img/images/b3.png" alt="" />
+          <h3>Combo 3</h3>
+        </div>
+        <div class="breakfast-1">
+          <img src="img/images/b4.png" alt="" />
+          <h3>Combo 4</h3>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="info" id="info">
+      <img src="img/images/bg-2.png" class="bg-2" alt="" />
+      <div class="info-content container">
+        <div class="info-img">
+          <img src="img/images/tart-7322951_1280-removebg-preview.png" alt="" />
+        </div>
+
+        <div class="info-txt">
+          <h2>Personaliza tu tarta para cualquier evento</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+            at, saepe cum, vero dolorem qui distinctio sequi deleniti nobis
+            blanditiis natus maiores corrupti, recusandae provident!
+          </p>
+          <a href="#" class="btn-1">Dejar mensaje </a>
+        </div>
+      </div>
+    </section>
+
+    <main class="products container" id="lista">
+      <h2>Productos</h2>
+      <div class="box-container" id="lista-1">
+        <div class="box">
+          <img src="img/images/pla1.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 1</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla2.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 2</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="2"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla3.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 3</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="3"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla4.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 4</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="4"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla1.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 5</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="5"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla2.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 6</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="6"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla3.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 7</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/images/pla4.png" alt="" />
+          <div class="product-txt">
+            <h3>Plato 8</h3>
+            <p>Calidad premium</p>
+            <p class="precio">30$</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="8"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-2" id="load-more">Cargar mas</div>
+    </main>
+
+    <section class="app container">
+      <div class="app-txt">
+        <h2>Descarga nuestra app, descubre ofertas</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque porro
+          animi quisquam laborum minus consequatur error, accusamus, molestiae
+          iusto dolore corrupti dicta officiis. Doloremque, non.
+        </p>
+        <div class="descarga">
+          <img src="img/images/store1.png" alt="" />
+          <img src="img/images/store2.png" alt="" />
+        </div>
+      </div>
+
+      <div class="app-img">
+        <img src="img/images/app.png" alt="" />
+      </div>
+    </section>
+
+    <!-- <footer class="footer">
+      <div class="footer-content container">
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Lorem</h3>
+          <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Lorem</h3>
+          <div class="descarga">
+            <img src="img/images/store1.png" alt="" />
+            <img src="img/images/store2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="img/images/DulceEncanto_Bakery_Logo_-_Playful_Cupcake_Icon-removebg-preview.png"
+            alt="Logo Dulce Encanto"
+          />
+          <p>Endulzando momentos, cada día.</p>
+
+          <div class="footer-social">
+            <!-- <a href="#"><img src="img/images/facebook.svg" alt="Facebook"></a> -->
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                ></path></svg></a>
+
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                ></path></svg></a>
+            
+
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,72a48.05,48.05,0,0,1-48-48,8,8,0,0,0-8-8H128a8,8,0,0,0-8,8V156a20,20,0,1,1-28.57-18.08A8,8,0,0,0,96,130.69V88a8,8,0,0,0-9.4-7.88C50.91,86.48,24,119.1,24,156a76,76,0,0,0,152,0V116.29A103.25,103.25,0,0,0,224,128a8,8,0,0,0,8-8V80A8,8,0,0,0,224,72Zm-8,39.64a87.19,87.19,0,0,1-43.33-16.15A8,8,0,0,0,160,102v54a60,60,0,0,1-120,0c0-25.9,16.64-49.13,40-57.6v27.67A36,36,0,1,0,136,156V32h24.5A64.14,64.14,0,0,0,216,87.5Z"
+                ></path></svg></a>
+            
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Nosotros</h3>
+          <ul>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Café</a></li>
+            <li><a href="#">Repostería</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Política de devolución</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Descargar App</h3>
+          <div class="footer-app">
+            <img src="img/images/store1.png" alt="" />
+            <img src="img/images/store2.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>© 2025 Dulce Encanto · Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
